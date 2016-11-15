@@ -3,7 +3,7 @@ jobs:
   plan:
   - get: test
   - task: run-terraform
-    file: repo/run.yml
+    file: test/run.yml
 
 
 resources:
