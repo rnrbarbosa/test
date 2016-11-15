@@ -6,5 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: echo
-  args: [hello world]
+  path: sh
+  args: -c
+  - |
+  find .
