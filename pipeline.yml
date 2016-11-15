@@ -2,21 +2,10 @@ jobs:
 - name: run-terrraform
   serial: true
   plan:
-  - aggregate:
-    - get: repo
-      trigger: true
+  - get: repo
+  - task: hello-world
+    file: repo/run.yml
 
-  - task: runtf
-    config:
-      platform: linux
-      image_resource:
-         type: docker-image
-         source: {repository: rnrbarbosa/terraform_alpine}
-      inputs:
-      - name: test
-        path: .
-      run:
-        path: ./test/run
 
 resources:
 - name: repo
