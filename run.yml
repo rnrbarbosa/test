@@ -6,4 +6,4 @@ image_resource:
   source: {repository: rnrbarbosa/terraform_alpine}
 
 run:
-  path: ./run
+  path: repo/run
