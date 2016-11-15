@@ -6,7 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 run:
-   path: sh
+  path: sh
   args:
   - -exc
   - |
