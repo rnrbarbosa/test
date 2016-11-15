@@ -5,5 +5,7 @@ image_resource:
   type: docker-image
   source: {repository: rnrbarbosa/terraform_alpine}
 
+inputs:
+- name : test
 run:
-  path: test/runtf
+  path: ./test/runtf
