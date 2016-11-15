@@ -12,9 +12,6 @@ image_resource:
   source:
     repository: rnrbarbosa/terraform_alpine
 
-inputs:
-- name: nuxeo-repo
-
 run:
   path: sh
   args:
