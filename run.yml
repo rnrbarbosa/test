@@ -7,5 +7,6 @@ image_resource:
 
 inputs:
 - name : test
+
 run:
-  path: ./test/runtf
+  path: test/runtf
