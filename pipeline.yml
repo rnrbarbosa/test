@@ -1,9 +1,8 @@
 jobs:
-- name: run-terrraform
-  serial: true
+- name: run-terraform
   plan:
   - get: repo
-  - task: hello-world
+  - task: run-terraform
     file: repo/run.yml
 
 
