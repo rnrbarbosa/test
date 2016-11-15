@@ -13,7 +13,7 @@ image_resource:
     repository: rnrbarbosa/terraform_alpine
 
 inputs:
-- name: nuxeo-repo
+- name: tasks
 
 run:
   path: sh
