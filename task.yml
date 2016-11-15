@@ -6,8 +6,11 @@ image_resource:
   source:
     repository: rnrbarbosa/terraform_alpine
 
-inputs:
-- name: tasks
+resources:
+  - name: nuxeo-repo
+    type: git
+    source:
+      uri: https://github.com/rnrbarbosa/test.git
 
 run:
   path: sh
