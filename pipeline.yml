@@ -16,7 +16,7 @@ jobs:
       - name: scripts
         path: .
       run:
-        path: ./run
+        path: scripts/run
 
 resources:
 - name: repo
