@@ -1,12 +1,6 @@
 ---
 platform: linux
 
-resources:
-  - name: nuxeo-repo
-    type: git
-    source:
-      uri: https://github.com/rnrbarbosa/test.git
-
 image_resource:
   type: docker-image
   source:
