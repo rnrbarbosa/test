@@ -1,13 +1,13 @@
 jobs:
 - name: run-terraform
   plan:
-  - get: repo
+  - get: test
   - task: run-terraform
     file: repo/run.yml
 
 
 resources:
-- name: repo
+- name: test
   type: git
   source:
     uri: https://github.com/rnrbarbosa/test.git
