@@ -1,0 +1,23 @@
+---
+platform: linux
+
+resources:
+  - name: nuxeo-repo
+    type: git
+    source:
+      uri: https://github.com/rnrbarbosa/test
+
+image_resource:
+  type: docker-image
+  source:
+    repository: rnrbarbosa/terraform_alpine
+
+inputs:
+- name: nuxeo-repo
+
+run:
+  path: sh
+  args:
+  - -exc
+  - |
+  find .

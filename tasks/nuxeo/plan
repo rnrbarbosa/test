@@ -1,0 +1,4 @@
+set -e -u -x
+
+/terraform version
+find .
