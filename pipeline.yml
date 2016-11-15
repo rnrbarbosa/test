@@ -13,10 +13,10 @@ jobs:
          type: docker-image
          source: {repository: rnrbarbosa/terraform_alpine}
       inputs:
-      - name: scripts
+      - name: test
         path: .
       run:
-        path: scripts/run
+        path: ./test/run
 
 resources:
 - name: repo
