@@ -2,11 +2,10 @@
 platform: linux
 
 resources:
-  - name: controller
+  - name: nuxeo-repo
     type: git
     source:
       uri: https://github.com/rnrbarbosa/test.git
-      branch: master
 
 image_resource:
   type: docker-image
