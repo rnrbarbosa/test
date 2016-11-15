@@ -6,6 +6,9 @@ image_resource:
   source:
     repository: rnrbarbosa/terraform_alpine
 
+inputs:
+- name: tasks
+
 run:
   path: sh
   args:
