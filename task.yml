@@ -4,8 +4,7 @@ platform: linux
 resources:
   - name: nuxeo-repo
     type: git
-    source:
-      uri: https://github.com/rnrbarbosa/test
+    source: { uri: https://github.com/rnrbarbosa/test }
 
 image_resource:
   type: docker-image
